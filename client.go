@@ -9,7 +9,7 @@ import (
 	"github.com/go-resty/resty/v2"
 )
 
-const feishuAPI = "https://open.feishu.cn/open-apis/bot/v2/hook/"
+const feishuAPI = "https://open.larksuite.com/open-apis/bot/v2/hook/"
 
 // Client feishu client
 type Client struct {
@@ -17,7 +17,7 @@ type Client struct {
 	Secret      string
 }
 
-// NewClient new dingtalk client
+// NewClient new feishu client
 func NewClient(accessToken, secret string) *Client {
 	return &Client{
 		AccessToken: accessToken,
